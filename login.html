@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diwali-Themed Login Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #e54b4b, #fcd440);
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Image Side with Fireworks */
+        .image-side {
+            flex: 1;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0nbWKMH8-_fMP_Q_IyXwoaZKdugwkqe9rVg&s');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        /* Decorative Lamps */
+        .lamp {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 60px;
+            background: linear-gradient(45deg, #f8b400, #d82f2f);
+            border-radius: 50% 50% 0 0;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+            animation: flicker 1.5s infinite ease-in-out alternate;
+        }
+        
+        .lamp::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 10px;
+            height: 15px;
+            background: radial-gradient(circle, #ff9e0f, transparent);
+            border-radius: 50%;
+        }
+
+        /* Flickering Animation */
+        @keyframes flicker {
+            0% { opacity: 1; transform: translateY(0) scale(1); }
+            100% { opacity: 0.7; transform: translateY(-2px) scale(1.05); }
+        }
+
+        /* Form Side */
+        .form-side {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: rgba(151, 15, 231, 0.8);
+        }
+
+        /* Login Form Styling */
+        .login-form {
+            width: 100%;
+            max-width: 400px;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .login-form h2 {
+            margin-bottom: 15px;
+            color: #970fe7;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s;
+            font-size: 14px;
+        }
+
+        .login-form input[type="text"]:focus,
+        .login-form input[type="password"]:focus {
+            border-color: #d81b60;
+        }
+
+        .login-form button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background-color: #f5ed08;
+            color: #970fe7;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .login-form button:hover {
+            background-color: #d81b60;
+            color: #ffffff;
+            transform: scale(1.05);
+        }
+
+        /* Diwali Wishes Text */
+        .login-form p {
+            font-size: 14px;
+            color: #666;
+            margin-top: 20px;
+        }
+        @media(max-width:400px){
+            .container{
+                flex-direction: column;
+            }
+            .login-container{
+                width:100% ;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="image-side">
+            <div class="lamp"></div>
+        </div>
+
+        
+        <div class="form-side">
+            <div class="login-form">
+                <h2>Welcome to the Diwali Festival</h2>
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <p> DONT HAVE AN ACCOUNT <a href="INDEX.HTML">signup</a>
+                </p>
+                <button class="submit" onclick="window.location.href='info.html'">login </button>
+                <p>May the lights of Diwali fill your life with happiness and joy.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

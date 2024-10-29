@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diwali Celebration at College</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #f39c12, #e74c3c);
+            color: #fff;
+            overflow: hidden;
+        }
+
+        /* Floating Diyas Effect */
+        @keyframes floatDiyas {
+            from { transform: translateY(100vh); opacity: 0; }
+            to { transform: translateY(-100px); opacity: 1; }
+        }
+
+        .diya {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/1a/Oil_lamp_animated.gif');
+            background-size: cover;
+            animation: floatDiyas 8s linear infinite;
+            opacity: 0.7;
+        }
+
+        .diya:nth-child(2) { left: 20%; animation-delay: 2s; }
+        .diya:nth-child(3) { left: 40%; animation-delay: 4s; }
+        .diya:nth-child(4) { left: 60%; animation-delay: 6s; }
+        .diya:nth-child(5) { left: 80%; animation-delay: 8s; }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Header Styling */
+        .header {
+            margin-top: 20px;
+            font-size: 36px;
+            font-weight: bold;
+            color: #f5ed08;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        /* Glowing Effect */
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #fff, 0 0 20px #000000, 0 0 30px #ffd700; }
+            to { text-shadow: 0 0 20px #fff, 0 0 30px #e3e2e1, 0 0 40px #ff4500; }
+        }
+
+        /* Decorative Line */
+        .header-line {
+            width: 100px;
+            height: 4px;
+            background-color: #ffffff;
+            margin: 10px auto;
+            border-radius: 2px;
+            box-shadow: 0 0 10px #fff;
+        }
+
+        /* Image Section */
+        .image-container {
+            margin: 20px 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Description Section */
+        .description {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #fff;
+            margin: 15px 0;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Back to Login Button */
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #970fe7;
+            color: #ffffff;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .back-button:hover {
+            background-color: #d81b60;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating Diyas -->
+    <div class="diya"></div>
+    <div class="diya"></div>
+    <div class="diya"></div>
+    <div class="diya"></div>
+    <div class="diya"></div>
+
+    <div class="container">
+        <div class="header">Diwali Celebration at Our College</div>
+        <div class="header-line"></div>
+
+        <!-- Image Section -->
+        <div class="image-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSmWKWDDWayHzASC4bvjD0FTJgSYtv_7ykQ&s" alt="College Diwali Celebration">
+        </div>
+
+        <!-- Description Section -->
+        <div class="description">
+            <p>Diwali: The Festival of Lights
+                Diwali, also known as Deepavali, is one of the most important and widely celebrated festivals in India and among Indian communities worldwide. Known as the "Festival of Lights," Diwali symbolizes the victory of light over darkness, good over evil, and knowledge over ignorance. This festival typically spans five days, with each day holding its unique significance, rituals, and celebrations.
+                
+                Historical and Mythological Significance
+                Diwali has ancient roots and is steeped in Hindu mythology. The origins of Diwali are associated with several historical and mythological stories:
+                
+                Return of Lord Rama: One of the most widely known legends associated with Diwali is the return of Lord Rama to Ayodhya after a 14-year exile, during which he defeated the demon king Ravana. The people of Ayodhya celebrated his return by lighting rows of oil lamps (diyas) throughout the kingdom, which gave rise to the tradition of lighting diyas during Diwali.
+                
+                Goddess Lakshmi's Birth: In Hindu mythology, Diwali is also celebrated as the day when Goddess Lakshmi, the goddess of wealth and prosperity, emerged from the ocean of milk during the churning of the ocean (Samudra Manthan). Thus, worshipping Lakshmi during Diwali is believed to bring prosperity and good fortune.
+                
+                The Victory of Lord Krishna: In certain regions, Diwali celebrates Lord Krishna’s victory over the demon Narakasura. This legend is particularly popular in South India, where Naraka Chaturdashi (the second day of Diwali) marks this event.
+                
+                The Return of the Pandavas: According to the Mahabharata, the five Pandava brothers returned to their kingdom after twelve years of exile on the day of Diwali. Their return was marked by celebrations and the lighting of lamps.
+                
+                These stories add layers of spiritual and cultural significance to Diwali, making it more than just a festival—it’s a reflection of Indian heritage and tradition.
+                
+                The Five Days of Diwali
+                Day 1 - Dhanteras: This day marks the beginning of Diwali and is dedicated to wealth and prosperity. People clean and decorate their homes, buy new utensils or jewelry, and worship Goddess Lakshmi to invite prosperity into their homes.
+                
+                Day 2 - Naraka Chaturdashi (Choti Diwali): On this day, people commemorate the victory of Lord Krishna over Narakasura. It is a day for cleaning homes and creating vibrant rangoli patterns, symbolizing joy and color in life.
+                
+                Day 3 - Lakshmi Puja (Main Diwali): This is the main day of Diwali celebrations. Families perform the Lakshmi Puja, praying for prosperity and health, and light diyas and candles around their homes. It is also marked by bursting firecrackers, exchanging sweets, and dressing in new clothes.
+                
+                Day 4 - Govardhan Puja: In some parts of India, this day is dedicated to worshipping Lord Krishna for lifting the Govardhan Hill to protect the villagers from a heavy rainstorm. People prepare a variety of food offerings as a symbol of gratitude.
+                
+                Day 5 - Bhai Dooj: The final day of Diwali is dedicated to celebrating the bond between brothers and sisters. On Bhai Dooj, sisters pray for their brothers' well-being, and brothers vow to protect their sisters.
+                
+                Traditions and Rituals
+                Lighting Diyas and Lamps: The lighting of oil lamps, candles, and decorative lanterns is the most iconic part of Diwali. Homes, temples, and streets are illuminated, creating a warm and joyous atmosphere. These lights symbolize the removal of darkness and ignorance and the triumph of knowledge.
+                
+                Decorating with Rangoli: Beautiful rangoli designs made of colored powders, flower petals, and rice are created at the entrance of homes to welcome guests and gods alike. Rangoli is a form of folk art and is an important element of Diwali decor.
+                
+                Bursting Firecrackers: Fireworks and firecrackers are commonly used to celebrate Diwali, believed to ward off evil spirits and bring happiness. In recent years, awareness about noise pollution and environmental impact has led to more eco-friendly celebrations with fewer firecrackers or alternatives like sparkler displays.
+                
+                Exchanging Gifts and Sweets: Diwali is a time for giving, and exchanging sweets and gifts is a way to express love and good wishes. Traditional sweets like ladoos, barfis, and gulab jamuns are shared among family, friends, and neighbors.
+                
+                Lakshmi Puja: On the main day of Diwali, families perform a ritualistic puja to invoke the blessings of Goddess Lakshmi and Lord Ganesha. It is believed that Lakshmi visits homes that are clean, pure, and well-lit, bringing good fortune and abundance.
+                
+                Regional Variations of Diwali
+                Diwali is celebrated across India but with regional variations:
+                
+                North India: In Northern India, Diwali celebrates Lord Rama’s return to Ayodhya. The main day is marked with Lakshmi Puja and lighting diyas to symbolize Ayodhya's celebration upon Rama’s arrival.
+                
+                South India: Known as Deepavali, the festival commemorates Lord Krishna's victory over Narakasura. People wake up early, take oil baths, and wear new clothes as part of the celebration.
+                
+                West India: In Gujarat, Diwali marks the end of the harvest season and the beginning of a new fiscal year. People perform the Lakshmi Puja with great devotion and prepare special foods.
+                
+                East India: In Bengal, Diwali coincides with Kali Puja, a festival dedicated to Goddess Kali. People worship the goddess with rituals and light diyas, hoping to ward off darkness and evil.
+                
+                Diwali's Modern Significance and Global Celebrations
+                Diwali has transcended cultural and religious boundaries to become a global festival celebrated by millions. Indian communities worldwide celebrate Diwali with the same zeal and enthusiasm as in India, organizing gatherings, cultural shows, and firework displays. The festival fosters a spirit of community, gratitude, and togetherness, inspiring people to cherish their loved ones and reflect on their blessings.
+                
+                In recent years, there has been a growing awareness of environmentally friendly ways to celebrate Diwali. Many families opt for eco-friendly decorations, fewer fireworks, and more organic ingredients in their food preparations, combining tradition with sustainability.
+                
+                Diwali’s Message of Unity and Positivity
+                Diwali is a festival that brings people together, regardless of religion, caste, or background. Its messages of goodwill, positivity, and unity are universal and resonate with all people. As a celebration of the human spirit, Diwali encourages us to find joy in life’s simple moments, to be kind to one another, and to spread light wherever we go.</p>
+        </div>
+        <button class="back-button" onclick="window.location.href='login.html'">Back to Login</button>
+    </div>
+</body>
+</html>
